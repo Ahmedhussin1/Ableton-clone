@@ -3,7 +3,7 @@ import bg from "../../public/header.avif";
 import Image from "next/image";
 function Hero() {
   return (
-    <div>
+    <div className="pt-10">
       <div className="relative">
         <Image
           alt="background image"

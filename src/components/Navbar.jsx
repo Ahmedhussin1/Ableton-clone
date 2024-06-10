@@ -32,8 +32,8 @@ function Navbar() {
       {/* right side nav elements */}
       <div className="">
         <ul className="flex gap-5">
-            <li className="font-700 text-[20px] text-[#0000ff]">Try Live 12 For Free</li>
-            <li className="font-700 text-[20px]">Log in or register</li>
+            <li className="font-semibold text-[18px] text-[#0000ff]">Try Live 12 For Free</li>
+            <li className="font-700 text-[18px]">Log in or register</li>
         </ul>
       </div>
     </div>
