@@ -4,35 +4,35 @@ function Navbar() {
   const navLinks = [
     {
       name: "Live",
-      link: "/live",
+      link: "/",
     },
     {
       name: "Push",
-      link: "/push",
+      link: "/",
     },
     {
       name: "Note",
-      link: "/note",
+      link: "/",
     },
     {
       name: "Link",
-      link: "/link",
+      link: "/",
     },
     {
       name: "Shop",
-      link: "/shop",
+      link: "/",
     },
     {
       name: "Pack",
-      link: "/pack",
+      link: "/",
     },
     {
       name: "Help",
-      link: "/help",
+      link: "/",
     },
     {
       name: "More +",
-      link: "/more",
+      link: "/",
     }
   ] 
   return (
@@ -43,34 +43,35 @@ function Navbar() {
         <svg
           role="img"
           aria-label="Logo Ableton"
-          class="main-nav__logo__image"
+          className=""
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
           width="45"
           height="21"
           viewBox="0 0 45 21"
-          
         >
           <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
         </svg>
         <ul className="flex gap-10">
-        {
-          navLinks.map((link)=>{
-            return(
-          <li key={link.name} className="font-semibold text-[15px]">
-            <Link href={link.link}>{link.name}</Link>
-          </li>
-
-            )
-          })
-        }
+          {navLinks.map((link) => {
+            return (
+              <li
+                key={link.name}
+                className="text-[#212225] font-semibold text-[15px]"
+              >
+                <Link href={link.link}>{link.name}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {/* right side nav elements */}
       <div className="">
         <ul className="flex gap-5">
-            <li className="font-semibold text-[18px] text-[#0000ff]">Try Live 12 For Free</li>
-            <li className="font-700 text-[18px]">Log in or register</li>
+          <li className="font-semibold text-[18px] text-[#0000ff]">
+            Try Live 12 For Free
+          </li>
+          <li className="font-700 text-[18px]">Log in or register</li>
         </ul>
       </div>
     </div>
