@@ -114,19 +114,22 @@ function Footer() {
           </ul>
         </div>
         {/* third column */}
-        <div className='flex flex-col gap-[20px] max-w-[500px]'>
-          <h1 className='font-semibold text-[25px]'>Sign up to our newsletter</h1>
+        <div className="flex flex-col gap-[20px] max-w-[500px]">
+          <h1 className="font-semibold text-[25px]">
+            Sign up to our newsletter
+          </h1>
           <p>
             Enter your email address to stay up to date with the latest offers,
             tutorials, downloads, surveys and more.
           </p>
-          <input className='border' type='submit'/>
+          <div className='flex justify-start items-center gap-5'>
+            <label>Email</label>
+            <input className="border border-[#CEC9C9] rounded" />
+          </div>
         </div>
       </div>
       {/* second row */}
-      <div>
-        
-      </div>
+      <div></div>
     </div>
   );
 }
