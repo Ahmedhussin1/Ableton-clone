@@ -5,7 +5,7 @@ import Image from "next/image";
 import img from '../../public/poster-meet-the-makers.avif'
 export default function Home() {
   return (
-    <main className="bg-white flex flex-col gap-[100px] justify-center items-center w-[1500px] mx-auto">
+    <main className="bg-white flex flex-col gap-[100px] justify-center items-center max-w-[1500px] mx-auto">
       <Hero />
       <div className="flex flex-col gap-10 w-[800px] z-10 mb-[300px]">
         <p className="font-bold text-[25px] text-black">
